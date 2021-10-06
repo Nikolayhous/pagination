@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+}
+.pagination ul {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.pagination ul li:not(:last-child) {
+  margin-right: 5px;
+}
+.pagination ul li {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.pagination ul li.dots {
+  cursor: default;
+}
+
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+  color: #dc56c5;
+  border: 1px solid #dc56c5;
+  border-radius: 10px 0px;
+}
